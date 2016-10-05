@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+Small tree drawn with the HTML5 <CANVAS> tag
+sraab123 10/4/2016
+-->
+<html>
+    <head>
+        <title>Canvas Tree</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <canvas id="myCanvas" width="200" height="200" >
+        </canvas>
+        
+        <script>
+
+            drawTree();
+
+            function drawTree() {
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                 ctx.lineWidth = 1;
+                ctx.fillStyle = "#996633";
+                ctx.fillRect(85, 80, 30, 100);
+                ctx.strokeRect(85, 80, 30, 100);
+
+                ctx.fillStyle = "#009933";
+
+                ctx.beginPath();
+                ctx.arc(75, 105, 25, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.arc(75, 80, 25, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.arc(100, 60, 25, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.arc(125, 80, 25, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.arc(125, 105, 25, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.arc(100, 115, 25, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.arc(100,85, 25, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.stroke();
+
+            }
+        </script> 
+
+        
+    </body>
+</html>
